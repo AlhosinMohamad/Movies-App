@@ -1,0 +1,10 @@
+package com.example.mvvm_project_example_sec16.DataLayer_Api_Models_DB_implementRepositories.repositories_implementation.ArtistRepository.RemoteDataSource
+
+import com.example.mvvm_project_example_sec16.DataLayer_Api_Models_DB_implementRepositories.models.Artist.Artist
+import com.example.mvvm_project_example_sec16.DataLayer_Api_Models_DB_implementRepositories.models.Artist.ArtistList
+import retrofit2.Response
+
+interface ArtistRemoteDataSourse {
+
+    suspend fun getAllartistFromAPI():Response<ArtistList>
+}
